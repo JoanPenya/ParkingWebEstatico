@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenidos a Palma Parking</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <style>
+        footer{
+            background-color: #0d7bff;
+        }
+
+        a{
+            color:black;
+        }
+
+        header{
+            background-image: url(../img/head.jpg);
+            background-size: 100%;
+            background-position: center;
+            /*color:white;*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        <h1 class="text-center">Palma parking</h1>
+        <br>
+        <br>
+    </header>
+
+    <br>
+    <div class="col-md-12 row">
+        <div class="col-md-4">
+            <span></span>
+        </div>
+
+        <div class="col-md-4">
+            <h3 class="text-center">Iniciar sesión </h3>
+            <br>
+            <form action="#">
+                <div class="form-group">
+                    <label for="user">DNI: </label>
+                    <input type="text" class="form-control" for="user" id="UserDNI">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Contraseña: </label>
+                    <input type="password" class="form-control" id="UserPassword">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label">Recordar sesión</label>
+                </div>
+                <br>
+                <div class="col-md-12 row">
+                    <div class="col-md-4 text-center">
+                        <button class="btn btn-primary" id="btnIngresar" onclick="getUserFromStorage()"> Iniciar </button>
+                    </div>
+                    <div class="col-md-4"><span> </span></div>
+                    <div class="col-md-4 text-center">
+                        <a class="btn btn-danger" href="../index.html"> Cancelar </a>
+                    </div>
+                </div>
+            </form>
+            <br>
+            
+        </div>
+
+        
+
+        <div class="col-md-4">
+            <span></span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <footer>
+        <br>
+        <div class="col-md-12 row">
+        <div class="col-md-3">
+            <h4 class="text-center">Acerca:</h4>
+            <ul class="list-unstyled text-small">
+                <li><a href="#">Nuestros servicios</a></li>
+                <li><a href="#">Areas</a></li>
+                <li><a href="#">Horarios</a></li>
+                <li><a href="#">Politicas de uso</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <h4 class="text-center">Surgerencias:</h4>
+            <ul class="list-unstyled text-small">
+                <li><a href="#">Reportar</a></li>
+                <li><a href="#">Ayuda a la ciudadania</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">Servicio asistente</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <h4 class="text-center">Otras WEBs</h4>
+            <ul class="list-unstyled text-small">
+                <li><a href="#">City Mascotas</a></li>
+                <li><a href="#">City Joven</a></li>
+                <li><a href="#">City te quiere</a></li>
+                <li><a href="#">Los mundos de City</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 row">
+            <h4 class="text-center">Donde estamos</h4>
+            <div class="col-sm-6">
+                <ul class="list-unstyled text-small">
+                    <li>Carrer de la proctectora</li>
+                    <li>Numero: 666</li>
+                    <li>Tel: 971696969</li>
+                    <li><img src="./img/ajuntament.png" height="40" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6">
+                <img src="./img/calle.PNG" height="130" alt="ubicación">
+            </div>
+        </div>
+        </div>
+        
+
+        <div class="text-center col">
+            <hr>
+            <p>(c)2020 per Joanutsu - Ajuntament de City</p>
+            <br>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script>
+        document.querySelector('#btnIngresar').addEventListener('click', iniciarSesion);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenidos a Palma Parking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        footer{
+            background-color: #0d7bff;
+        }
+
+        a{
+            color:black;
+        }
+
+        header{
+            background-image: url(../img/head.jpg);
+            background-size: 100%;
+            background-position: center;
+            /*color:white;*/
+        }
+    </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    
+
+    <header>
+        <br>
+        <br>
+        <h1 class="text-center">Palma parking</h1>
+        <br>
+        <br>
+    </header>
+
+    <br>
+
+    <h1 id="bienvenidoUser">
+
+    </h1>
+
+    <br>
+
+    <div class="col-md-12 row text-center">
+        <div class="col-md-6">
+            <a href="#" data-toggle="modal" data-target="#admin">
+                <img src="../img/administrar.jpg" width="300" height="300" alt="">
+                <h4>Administrar cuenta</h4>
+            </a>
+        </div>
+
+        
+
+        <div class="col-md-6">
+            <a href="#" data-toggle="modal" data-target="#reserv">
+                <img src="../img/reservar.jpg" width="300" height="300" alt="">
+                <h4>Reservar Parking</h4>
+            </a>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="col-md-12 row text-center">
+
+        <div class="col-md-6">
+            <a href="#" data-toggle="modal" data-target="#revis">
+                <img src="../img/revisar.jpg" width="300" height="300" alt="">
+                <h4>Revisar Resevas</h4>
+            </a>
+        </div>
+
+        <div class="col-md-6">
+            <a href="#" data-toggle="modal" data-target="#salir">
+                <img src="../img/salir.png" width="300" height="300" alt="">
+                <h4>Finalizar el uso</h4>
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <footer>
+        <br>
+        <div class="col-md-12 row">
+        <div class="col-md-3">
+            <h4 class="text-center">Acerca:</h4>
+            <ul class="list-unstyled text-small">
+                <li><a href="#">Nuestros servicios</a></li>
+                <li><a href="#">Areas</a></li>
+                <li><a href="#">Horarios</a></li>
+                <li><a href="#">Politicas de uso</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <h4 class="text-center">Surgerencias:</h4>
+            <ul class="list-unstyled text-small">
+                <li><a href="#">Reportar</a></li>
+                <li><a href="#">Ayuda a la ciudadania</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">Servicio asistente</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <h4 class="text-center">Otras WEBs</h4>
+            <ul class="list-unstyled text-small">
+                <li><a href="#">City Mascotas</a></li>
+                <li><a href="#">City Joven</a></li>
+                <li><a href="#">City te quiere</a></li>
+                <li><a href="#">Los mundos de City</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 row">
+            <h4 class="text-center">Donde estamos</h4>
+            <div class="col-sm-6">
+                <ul class="list-unstyled text-small">
+                    <li>Carrer de la proctectora</li>
+                    <li>Numero: 666</li>
+                    <li>Tel: 971696969</li>
+                    <li><img src="./img/ajuntament.png" height="40" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6">
+                <img src="./img/calle.PNG" height="130" alt="ubicación">
+            </div>
+        </div>
+        </div>
+        
+
+        <div class="text-center col">
+            <hr>
+            <p>(c)2020 per Joanutsu - Ajuntament de City</p>
+            <br>
+        </div>
+    </footer>
+
+    <!-- Administrar -->
+
+    <!-- class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" -->
+
+    <div class="modal fade" id="admin">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Administrar cuenta</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Coche</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Perfil</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="col-md-12 row">
+                            <div class="col-md-3">Matricula</div>
+                            <div class="col-md-2">Nombre</div>
+                            <div class="col-md-2">Consumo</div>
+                            <div class="col-md-2">Ocupantes</div>
+                            <div class="col-md-2"></div>
+                        </div>
+                        <div class="col-md-12 row" id="pCoches">
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="col-md-12 row" id="usuare">
+                            <div class="col-md-3">DNI</div>
+                            <div class="col-md-2">Nombre</div>
+                            <div class="col-md-2">Pass</div>
+                            <div class="col-md-2">dirección</div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Reserva -->
+
+    <div class="modal fade" id="reserv">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reservar</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+                <form action="#">
+                    <div class="form-group">
+                        <label for="">selecciona parking</label>
+                        <select name="parking" id="parking">
+                            <option value="Calle Justiciera">Calle Justiciera</option>
+                            <option value="Plaza Pasionaria">Plaza Pasionaria</option>
+                            <option value="Corte Ingles A">Corte Ingles A</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dia">Dia</label>
+                        <input type="date" name="dia" id="dia">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <input name="hora" type="time" id="hora">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cocheName">coche</label>
+                        <select name="cocheName" id="cocheName">
+                            <option value="6597TPD">Toyota yoyo</option>
+                            <option value="7983RDB">coche Fantastico</option>
+                            <option value="Coche princesa">Coche princesa</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pasajeros">Numero de pasajeros</label>
+                        <select name="pasajeros" id="pasajeros">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Total:</label>
+                        <input type="text" value="5,95€" id="totalPreu" disabled />
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="checkReservas()" type="submit">Save changes</button>
+                      </div>
+
+                </form>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- REVISAR -->
+
+      <div class="modal fade" id="revis">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Revisar reserva</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="pReservas">
+              
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Salir -->
+
+    <div class="modal fade" id="salir">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cerrar sesión</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6>¿Quieres salir de la sesión?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <a class="btn btn-primary" href="../index.html">Salir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="../js/index.js"></script>
+
+</body>
+</html>
