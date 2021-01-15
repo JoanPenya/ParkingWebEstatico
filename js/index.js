@@ -1,29 +1,29 @@
 let listaUsuarios =
 [
     //DNI, nombre, apellido, nacimiento, Direccion, contraseña
-    ['53178962T','Jason','Borja','1975-01-12','Calle Enea n3','Hola123']
+    ['11111111X','XXXX','XXXX','1975-01-12','XXXXXX','Hola123']
 ];
 
 let listaParking =
 [
     //id, Nombre, Plazas
-    ['1','Calle Justiciera','200'],
-    ['2','Plaza Pasionaria','510'],
-    ['3','Corte Ingles A','890']
+    ['1','XXXX','200'],
+    ['2','XXXX','510'],
+    ['3','XXXX','890']
 ];
 
 let listaCoches =
 [
     //Matricula, nombre, Modelo, Marca, Asientos, consumo, Propietario
-    ['6597TPD','JaguarBlack','Black','Jaguar','5','gasolina', '53178962T'],
-    ['7983RDB','SeatPrincesa','Panda','Seat','4','diesel', '75314892O']
+    ['1111XXX','XXXXXX','XXXXXX','XXXXXX','5','XXXXXX', '11111111X'],
+    ['1111XXX','XXXXXX','XXXXXX','XXXXXX','4','XXXXXX', '11111111X']
 ];
 
 let listaReservas =
 [
     //id, id_parking, DNI_reservante, dia, hora, ID_Coche
-    ['1','Calle Justiciera','53178962T','2020-02-14','12:30:00','6597TPD'],
-    ['2','Corte Ingles A','53178962T','2020-02-20','12:30:00','6597TPD']
+    ['1','XXXX','11111111X','2020-02-14','12:30:00','1111XXX'],
+    ['2','XXXX','11111111X','2020-02-20','12:30:00','1111XXX']
 ];
 
 
